@@ -1,0 +1,8 @@
+ppt_extract/
+ppt_extract.zip
+assets/
+assets_og/
+.vscode/
+.idea/
+*.db
+*.sqlite3
