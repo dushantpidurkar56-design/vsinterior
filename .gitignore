@@ -1,0 +1,21 @@
+# Environment variables (Crucial to exclude so secrets aren't leaked)
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Local databases (Not needed since we use Supabase)
+*.db
+*.sqlite3

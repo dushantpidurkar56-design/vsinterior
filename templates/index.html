@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.S. INTERIOR | Premium Turnkey Contractor</title>
+    <!-- Elegant Light Theme Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', _external=False) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917620277777" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-main">V.S. INTERIOR</span>
+            <span class="logo-sub">Est. 2000</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#projects">Our Projects</a>
+            <a href="#enquiry" class="nav-contact">Contact Us</a>
+            <a href="{{ url_for('admin_login') }}" class="nav-admin-btn">&#128274; Admin</a>
+        </div>
+        <!-- Hamburger for mobile -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#projects" class="mobile-nav-link">Our Projects</a>
+        <a href="#enquiry" class="mobile-nav-link">Contact Us</a>
+        <a href="{{ url_for('admin_login') }}" class="mobile-admin-btn">&#128274; Admin</a>
+    </div>
+
+    <!-- Hero Slideshow Section -->
+    <header id="home" class="hero-slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600" alt="Premium Luxury Interior">
+                <div class="slide-content">
+                    <h1>Luxury. Minimalism. Modern Aesthetics.</h1>
+                    <p>Elevating Spaces Beyond Imagination</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=1600" alt="Executive Office Interior">
+                <div class="slide-content">
+                    <h1>Functionally Excellent. Cosmetically Superior.</h1>
+                    <p>Turning architectural vision into flawless reality.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" alt="Lush Hospitality Interior">
+                <div class="slide-content">
+                    <h1>Bespoke Commercial & Residential Design</h1>
+                    <p>Master Craftsmanship Since 2000</p>
+                </div>
+            </div>
+        </div>
+        <button class="slide-btn prev">&#10094;</button>
+        <button class="slide-btn next">&#10095;</button>
+    </header>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <h3 class="featured-title">Our Work Has Been Featured In</h3>
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <!-- Using dummy icons/text for logos -->
+                <span><i class="fab fa-houzz"></i> Architectural Digest</span>
+                <span><i class="fab fa-vimeo-v"></i> Vogue Living</span>
+                <span><i class="fas fa-gem"></i> Elle Decor</span>
+                <span><i class="fas fa-leaf"></i> Home & Design</span>
+                <span><i class="fas fa-building"></i> Forbes India</span>
+                <!-- Duplicate for infinite scroll -->
+                <span><i class="fab fa-houzz"></i> Architectural Digest</span>
+                <span><i class="fab fa-vimeo-v"></i> Vogue Living</span>
+                <span><i class="fas fa-gem"></i> Elle Decor</span>
+                <span><i class="fas fa-leaf"></i> Home & Design</span>
+                <span><i class="fas fa-building"></i> Forbes India</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Founders Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>The Leadership</h2>
+            <div class="divider"></div>
+            <p class="section-subtext">The visionaries bridging architectural vision with flawless execution.</p>
+        </div>
+        
+        <div class="founders-grid">
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" alt="Vinod Suthar">
+                </div>
+                <div class="founder-info">
+                    <h3>Vinod Suthar</h3>
+                    <span class="designation">Founder & Principal Director</span>
+                    <p><strong>Experience:</strong> 25+ years commanding luxury spaces.</p>
+                    <p><strong>Philosophy:</strong> Precision is paramount. Design must harmonize with the lifestyle of the inhabitants or the operational needs of the business.</p>
+                    <p><strong>Aim:</strong> To build a prestigious turnkey firm that delivers without compromising quality.</p>
+                    <p><strong>Approach:</strong> Hands-on operational control and strict adherence to timelines and material authenticity.</p>
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" alt="Yogesh Suthar">
+                </div>
+                <div class="founder-info">
+                    <h3>Yogesh Suthar</h3>
+                    <span class="designation">Managing Partner</span>
+                    <p><strong>Experience:</strong> 15+ years in dynamic operational leadership.</p>
+                    <p><strong>Philosophy:</strong> Minimalism isn't empty space; it's curated purpose.</p>
+                    <p><strong>Aim:</strong> Modernizing the brand's aesthetic while scaling the firm's commercial capabilities globally.</p>
+                    <p><strong>Approach:</strong> Strategic client communications, incorporating modern tech, and maintaining unparalleled design aesthetics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Our <br><em>Capabilities</em>.</h2>
+                <div class="divider left"></div>
+                <p>Equipped with modern in-house workstations spanning <strong>over 1,950 sq.ft across Pune</strong>, we deploy a highly skilled workforce to deliver every project.</p>
+                <div class="contact-buttons" style="justify-content: flex-start; margin-top: 2rem;">
+                    <a href="#enquiry" class="btn-primary">Consult With Us</a>
+                </div>
+            </div>
+            
+            <div class="expertise-list">
+                <h3>Core Operations</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Complete Turnkey Solutions</li>
+                    <li><i class="fas fa-check"></i> Bespoke Carpentry & Joinery</li>
+                    <li><i class="fas fa-check"></i> Premium Space Planning</li>
+                    <li><i class="fas fa-check"></i> Electrical & Plumbing Integration</li>
+                    <li><i class="fas fa-check"></i> Premium Painting & Textures</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>Our Projects</h2>
+            <div class="divider"></div>
+            <p class="section-subtext">Commercial & Residential highlights.</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Commercial">Commercial</button>
+            <button class="filter-btn" data-filter="Residential">Residential</button>
+        </div>
+
+        <div class="project-grid">
+            {% for project in projects %}
+            <div class="project-card filter-item {{ project.category }}">
+                <div class="card-image">
+                    <a href="{{ url_for('project_detail', project_id=project.id) }}">
+                        <img src="{{ project.images[0] }}" alt="{{ project.name }}">
+                        <div class="overlay">
+                            <span>View Project</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="category">{{ project.category }}</span>
+                    <h3>{{ project.name }}</h3>
+                    <p>{{ project.concept }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section id="enquiry" class="contact-section">
+        <div class="contact-wrapper">
+            <div class="enquiry-form-container">
+                <h2>Start Your Project</h2>
+                <p>Share your vision and schedule a consultation with our design team.</p>
+                
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                    {% for category, message in messages %}
+                      <div class="flash-message {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+
+                <form class="enquiry-form" action="{{ url_for('submit_enquiry') }}" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXXXXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Tell us a little about your project (optional)</label>
+                        <textarea id="details" name="details" rows="4" placeholder="E.g., Looking for a modern 4BHK interior..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="start_date">When are you hoping to begin?</label>
+                        <select id="start_date" name="start_date">
+                            <option value="">Select timeframe</option>
+                            <option value="Immediately">Immediately</option>
+                            <option value="1-3 months">1-3 months</option>
+                            <option value="3-6 months">3-6 months</option>
+                            <option value="6+ months">6+ months</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hear_about">How did you hear about us?</label>
+                        <select id="hear_about" name="hear_about">
+                            <option value="">Select source</option>
+                            <option value="Google Search">Google Search</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Referral">Friend/Family Referral</option>
+                            <option value="Magazine">Magazine Feature</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-100">Submit Enquiry</button>
+                </form>
+            </div>
+            
+            <div class="contact-info-panel">
+                <div class="contact-details">
+                    <div class="contact-column">
+                        <h4>Direct Lines</h4>
+                        <p><a href="tel:+917620277777">+91 76202 77777</a></p>
+                        <p><a href="tel:+919767861114">+91 97678 61114</a></p>
+                    </div>
+                    <div class="contact-column">
+                        <h4>Primary Email</h4>
+                        <p><a href="mailto:vsinterior.pune@gmail.com">vsinterior.pune@gmail.com</a></p>
+                    </div>
+                    <div class="contact-column">
+                        <h4>Execution Hub</h4>
+                        <p>S/232/1/15H, 1183, Viidhate Wasti,<br>Baner, Pune - 411045</p>
+                    </div>
+                </div>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/917620277777" target="_blank" class="btn-whatsapp-large">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="f-logo">
+                    <strong>V.S. INTERIOR</strong><br>
+                    <small>Premium Turnkey Solutions</small>
+                </div>
+                <p>Functionally excellent, cosmetically superior designs.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Details</h4>
+                <p>S/232/1/15H, 1183, Viidhate Wasti,<br>Baner, Pune - 411045</p>
+                <p><a href="tel:+917620277777">+91 76202 77777</a></p>
+                <p><a href="mailto:vsinterior.pune@gmail.com">vsinterior.pune@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 V.S. Interior. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
