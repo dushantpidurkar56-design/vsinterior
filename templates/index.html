@@ -13,9 +13,12 @@
 </head>
 <body>
 
-    <!-- Floating WhatsApp Button -->
+    <!-- Floating Action Buttons -->
     <a href="https://wa.me/917620277777" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/vsinteriorpune?igsh=bjc3Y3J2dXpqY2Vy" class="instagram-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
     </a>
 
     <!-- Navigation -->
@@ -30,7 +33,7 @@
             <a href="#about">About Us</a>
             <a href="#projects">Our Projects</a>
             <a href="#enquiry" class="nav-contact">Contact Us</a>
-            <a href="{{ url_for('admin_login') }}" class="nav-admin-btn">&#128274; Admin</a>
+            <a href="{{ url_for('admin_login') }}" class="nav-admin-btn">Admin</a>
         </div>
         <!-- Hamburger for mobile -->
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
@@ -45,7 +48,7 @@
         <a href="#about" class="mobile-nav-link">About Us</a>
         <a href="#projects" class="mobile-nav-link">Our Projects</a>
         <a href="#enquiry" class="mobile-nav-link">Contact Us</a>
-        <a href="{{ url_for('admin_login') }}" class="mobile-admin-btn">&#128274; Admin</a>
+        <a href="{{ url_for('admin_login') }}" class="mobile-admin-btn">Admin</a>
     </div>
 
     <!-- Hero Slideshow Section -->
@@ -83,59 +86,25 @@
         <div class="marquee-wrapper">
             <div class="marquee">
                 <!-- Using dummy icons/text for logos -->
-                <span><i class="fab fa-houzz"></i> Architectural Digest</span>
-                <span><i class="fab fa-vimeo-v"></i> Vogue Living</span>
-                <span><i class="fas fa-gem"></i> Elle Decor</span>
-                <span><i class="fas fa-leaf"></i> Home & Design</span>
-                <span><i class="fas fa-building"></i> Forbes India</span>
+                <span><i class="fas fa-building"></i> WB Sales Vimannagar</span>
+                <span><i class="fas fa-home"></i> Amanora Lake House</span>
+                <span><i class="fas fa-building"></i> MCA Pune</span>
+                <span><i class="fas fa-building"></i> Fluent India</span>
+                <span><i class="fas fa-building"></i> Siddhatech Software</span>
+                <span><i class="fas fa-home"></i> Gaurav Bunglow</span>
+                <span><i class="fas fa-home"></i> Sweet Water Villa Amanora</span>
                 <!-- Duplicate for infinite scroll -->
-                <span><i class="fab fa-houzz"></i> Architectural Digest</span>
-                <span><i class="fab fa-vimeo-v"></i> Vogue Living</span>
-                <span><i class="fas fa-gem"></i> Elle Decor</span>
-                <span><i class="fas fa-leaf"></i> Home & Design</span>
-                <span><i class="fas fa-building"></i> Forbes India</span>
+                <span><i class="fas fa-building"></i> WB Sales Vimannagar</span>
+                <span><i class="fas fa-home"></i> Amanora Lake House</span>
+                <span><i class="fas fa-building"></i> MCA Pune</span>
+                <span><i class="fas fa-building"></i> Fluent India</span>
+                <span><i class="fas fa-building"></i> Siddhatech Software</span>
+                <span><i class="fas fa-home"></i> Gaurav Bunglow</span>
+                <span><i class="fas fa-home"></i> Sweet Water Villa Amanora</span>
             </div>
         </div>
     </section>
 
-    <!-- About & Founders Section -->
-    <section id="about" class="about-section">
-        <div class="section-header">
-            <h2>The Leadership</h2>
-            <div class="divider"></div>
-            <p class="section-subtext">The visionaries bridging architectural vision with flawless execution.</p>
-        </div>
-        
-        <div class="founders-grid">
-            <div class="founder-card">
-                <div class="founder-img">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" alt="Vinod Suthar">
-                </div>
-                <div class="founder-info">
-                    <h3>Vinod Suthar</h3>
-                    <span class="designation">Founder & Principal Director</span>
-                    <p><strong>Experience:</strong> 25+ years commanding luxury spaces.</p>
-                    <p><strong>Philosophy:</strong> Precision is paramount. Design must harmonize with the lifestyle of the inhabitants or the operational needs of the business.</p>
-                    <p><strong>Aim:</strong> To build a prestigious turnkey firm that delivers without compromising quality.</p>
-                    <p><strong>Approach:</strong> Hands-on operational control and strict adherence to timelines and material authenticity.</p>
-                </div>
-            </div>
-
-            <div class="founder-card">
-                <div class="founder-img">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" alt="Yogesh Suthar">
-                </div>
-                <div class="founder-info">
-                    <h3>Yogesh Suthar</h3>
-                    <span class="designation">Managing Partner</span>
-                    <p><strong>Experience:</strong> 15+ years in dynamic operational leadership.</p>
-                    <p><strong>Philosophy:</strong> Minimalism isn't empty space; it's curated purpose.</p>
-                    <p><strong>Aim:</strong> Modernizing the brand's aesthetic while scaling the firm's commercial capabilities globally.</p>
-                    <p><strong>Approach:</strong> Strategic client communications, incorporating modern tech, and maintaining unparalleled design aesthetics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
@@ -280,6 +249,45 @@
                     <a href="https://wa.me/917620277777" target="_blank" class="btn-whatsapp-large">
                         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Founders Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>The Leadership</h2>
+            <div class="divider"></div>
+            <p class="section-subtext">The visionaries bridging architectural vision with flawless execution.</p>
+        </div>
+        
+        <div class="founders-grid">
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="{{ url_for('static', filename='images/founders/vinod.jpg') }}" alt="Vinod Suthar" style="object-position: center 10%;">
+                </div>
+                <div class="founder-info">
+                    <h3>Vinod Suthar</h3>
+                    <span class="designation">Founder & Principal Director</span>
+                    <p><strong>Experience:</strong> 25+ years commanding luxury spaces.</p>
+                    <p><strong>Philosophy:</strong> Precision is paramount. Design must harmonize with the lifestyle of the inhabitants or the operational needs of the business.</p>
+                    <p><strong>Aim:</strong> To build a prestigious turnkey firm that delivers without compromising quality.</p>
+                    <p><strong>Approach:</strong> Hands-on operational control and strict adherence to timelines and material authenticity.</p>
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="{{ url_for('static', filename='images/founders/yogesh.jpg') }}" alt="Yogesh Suthar" style="object-position: center 10%;">
+                </div>
+                <div class="founder-info">
+                    <h3>Yogesh Suthar</h3>
+                    <span class="designation">Managing Partner</span>
+                    <p><strong>Experience:</strong> 15+ years in dynamic operational leadership.</p>
+                    <p><strong>Philosophy:</strong> Minimalism isn't empty space; it's curated purpose.</p>
+                    <p><strong>Aim:</strong> Modernizing the brand's aesthetic while scaling the firm's commercial capabilities globally.</p>
+                    <p><strong>Approach:</strong> Strategic client communications, incorporating modern tech, and maintaining unparalleled design aesthetics.</p>
                 </div>
             </div>
         </div>

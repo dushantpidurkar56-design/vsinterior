@@ -65,6 +65,31 @@ a {
     box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
 }
 
+/* Instagram Floating Button */
+.instagram-float {
+    position: fixed;
+    bottom: 105px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 32px;
+    box-shadow: 0 10px 30px rgba(220, 39, 67, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.instagram-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(220, 39, 67, 0.5);
+    color: var(--white);
+}
+
 /* Navigation */
 .navbar {
     display: flex;
@@ -139,6 +164,7 @@ a {
 .nav-admin-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.4rem;
     padding: 0.45rem 1.1rem;
     background: var(--text-primary);
@@ -908,18 +934,41 @@ a {
     color: var(--white);
     border-radius: 4px;
     margin-top: 1rem;
+    text-align: center;
+}
+
+/* Global sticky header offset */
+section {
+    scroll-margin-top: 85px;
 }
 
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .slide-content h1 { font-size: 2.2rem; }
+    
+    /* Hero fixes */
+    .slide-content h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem; }
     .slide-content p { font-size: 0.85rem; }
-    .card-content { padding: 2rem; }
-    .enquiry-form-container { padding: 2rem; }
-    .contact-info-panel { padding: 0; }
+    .slide-btn { width: 40px; height: 40px; font-size: 1rem; }
+    
+    /* Layout and padding fixes */
+    .about-section, .featured-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .card-content { padding: 1.5rem; }
+    .enquiry-form-container { padding: 1.5rem; }
+    .contact-info-panel { padding: 0 1.5rem; margin-top: 2rem; }
+    .footer { padding-left: 1.5rem; padding-right: 1.5rem; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
     .filters { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+    
+    /* Images and Typography */
     .card-image { height: 280px; }
     .founder-img { height: 350px; }
+    .founder-info h3 { font-size: 1.8rem; }
+    .founder-info p { font-size: 0.95rem; line-height: 1.5; }
+    .expertise-list { padding: 2rem 1.5rem; }
+    
+    /* Marquee & Floating elements */
+    .marquee span { font-size: 1.1rem; margin-right: 2rem; }
+    .whatsapp-float { width: 50px; height: 50px; font-size: 24px; bottom: 15px; right: 15px; }
+    .instagram-float { width: 50px; height: 50px; font-size: 24px; bottom: 80px; right: 15px; }
 }

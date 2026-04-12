@@ -71,7 +71,11 @@ projects_db = [
         "location": "Amanora, Pune",
         "concept": "Nature-inspired luxury lakeside interiors.",
         "description": "A premium hospitality project blending natural textures with contemporary design, offering guests a serene lakeside experience through curated materials and open layouts.",
-        "images": ["https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200"]
+        "images": [
+            "/static/images/projects/amanora_lake_house/amanora_1.jpg",
+            "/static/images/projects/amanora_lake_house/amanora_2.jpg",
+            "/static/images/projects/amanora_lake_house/amanora_3.jpg"
+        ]
     },
     {
         "id": "5",
@@ -81,7 +85,12 @@ projects_db = [
         "location": "Pune",
         "concept": "Professional institutional interiors with functional precision.",
         "description": "An institutional commercial project for MCA Pune, delivering a disciplined, professional interior design with focused spatial planning and premium finishes.",
-        "images": ["https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200"]
+        "images": [
+            "/static/images/projects/mca_pune/mca_1.jpg",
+            "/static/images/projects/mca_pune/mca_2.jpg",
+            "/static/images/projects/mca_pune/mca_3.jpg",
+            "/static/images/projects/mca_pune/mca_4.jpg"
+        ]
     },
     {
         "id": "6",
