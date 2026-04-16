@@ -18,49 +18,18 @@ init_db()
 # Dummy Projects Data for the website
 projects_db = [
     {
-        "id": "1",
-        "name": "Siddhatech Software",
+        "id": "5",
+        "name": "MCA Pune",
         "category": "Commercial",
-        "type": "Commercial Office",
-        "location": "Pune, India",
-        "concept": "Optimized workspace featuring an open-plan design with formal conference rooms.",
-        "description": "A state-of-the-art office designed for productivity and modern aesthetics. It features ergonomic furniture, dynamic lighting, and collaborative open spaces.",
-        "images": ["https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200", "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=1200", "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200"]
-    },
-    {
-        "id": "2",
-        "name": "'Gaurav' Bungalow",
-        "category": "Residential",
-        "type": "Premium Residential",
-        "location": "Pune City",
-        "concept": "A seamless blend of classic comfort and modern aesthetics.",
-        "description": "This luxurious bungalow features striking architecture with classic tiled roofing and extensive terrace spaces, creating a lavish residential experience.",
+        "type": "Institutional",
+        "location": "Pune",
+        "concept": "Professional institutional interiors with functional precision.",
+        "description": "An institutional commercial project for MCA Pune, delivering a disciplined, professional interior design with focused spatial planning and premium finishes.",
         "images": [
-            "/static/images/projects/gaurav/media__1775029955580.jpg",
-            "/static/images/projects/gaurav/media__1775029955654.jpg",
-            "/static/images/projects/gaurav/media__1775029955717.jpg",
-            "/static/images/projects/gaurav/media__1775029955839.jpg",
-            "/static/images/projects/gaurav/media__1775029955904.jpg",
-            "/static/images/projects/gaurav/media__1775029994345.jpg",
-            "/static/images/projects/gaurav/media__1775029994525.jpg",
-            "/static/images/projects/gaurav/media__1775029994540.jpg",
-            "/static/images/projects/gaurav/media__1775030002273.jpg"
-        ]
-    },
-    {
-        "id": "3",
-        "name": "WB Sales",
-        "category": "Commercial",
-        "type": "Commercial Office",
-        "location": "Viman Nagar, Pune",
-        "concept": "Sleek, brand-forward workspace with dynamic zones.",
-        "description": "A modern commercial interior for WB Sales at Viman Nagar, featuring professional workstations, vibrant branding elements, and ergonomic spaces designed for performance.",
-        "images": [
-            "/static/images/projects/wb_sales/wb_sales_1.jpg",
-            "/static/images/projects/wb_sales/wb_sales_2.jpg",
-            "/static/images/projects/wb_sales/wb_sales_3.jpg",
-            "/static/images/projects/wb_sales/wb_sales_4.jpg",
-            "/static/images/projects/wb_sales/wb_sales_5.jpg"
+            "/static/images/projects/mca_pune/mca_1.jpg",
+            "/static/images/projects/mca_pune/mca_2.jpg",
+            "/static/images/projects/mca_pune/mca_3.jpg",
+            "/static/images/projects/mca_pune/mca_4.jpg"
         ]
     },
     {
@@ -78,18 +47,19 @@ projects_db = [
         ]
     },
     {
-        "id": "5",
-        "name": "MCA Pune",
+        "id": "3",
+        "name": "WB Sales",
         "category": "Commercial",
-        "type": "Institutional",
-        "location": "Pune",
-        "concept": "Professional institutional interiors with functional precision.",
-        "description": "An institutional commercial project for MCA Pune, delivering a disciplined, professional interior design with focused spatial planning and premium finishes.",
+        "type": "Commercial Office",
+        "location": "Viman Nagar, Pune",
+        "concept": "Sleek, brand-forward workspace with dynamic zones.",
+        "description": "A modern commercial interior for WB Sales at Viman Nagar, featuring professional workstations, vibrant branding elements, and ergonomic spaces designed for performance.",
         "images": [
-            "/static/images/projects/mca_pune/mca_1.jpg",
-            "/static/images/projects/mca_pune/mca_2.jpg",
-            "/static/images/projects/mca_pune/mca_3.jpg",
-            "/static/images/projects/mca_pune/mca_4.jpg"
+            "/static/images/projects/wb_sales/wb_sales_1.jpg",
+            "/static/images/projects/wb_sales/wb_sales_2.jpg",
+            "/static/images/projects/wb_sales/wb_sales_3.jpg",
+            "/static/images/projects/wb_sales/wb_sales_4.jpg",
+            "/static/images/projects/wb_sales/wb_sales_5.jpg"
         ]
     },
     {
@@ -121,6 +91,36 @@ projects_db = [
             "/static/images/projects/sweet_water_villa/villa_3.jpg",
             "/static/images/projects/sweet_water_villa/villa_4.jpg",
             "/static/images/projects/sweet_water_villa/villa_5.jpg"
+        ]
+    },
+    {
+        "id": "1",
+        "name": "Siddhatech Software",
+        "category": "Commercial",
+        "type": "Commercial Office",
+        "location": "Pune, India",
+        "concept": "Optimized workspace featuring an open-plan design with formal conference rooms.",
+        "description": "A state-of-the-art office designed for productivity and modern aesthetics. It features ergonomic furniture, dynamic lighting, and collaborative open spaces.",
+        "images": ["https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200", "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=1200", "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200"]
+    },
+    {
+        "id": "2",
+        "name": "'Gaurav' Bungalow",
+        "category": "Residential",
+        "type": "Premium Residential",
+        "location": "Pune City",
+        "concept": "A seamless blend of classic comfort and modern aesthetics.",
+        "description": "This luxurious bungalow features striking architecture with classic tiled roofing and extensive terrace spaces, creating a lavish residential experience.",
+        "images": [
+            "/static/images/projects/gaurav/media__1775029955580.jpg",
+            "/static/images/projects/gaurav/media__1775029955654.jpg",
+            "/static/images/projects/gaurav/media__1775029955717.jpg",
+            "/static/images/projects/gaurav/media__1775029955839.jpg",
+            "/static/images/projects/gaurav/media__1775029955904.jpg",
+            "/static/images/projects/gaurav/media__1775029994345.jpg",
+            "/static/images/projects/gaurav/media__1775029994525.jpg",
+            "/static/images/projects/gaurav/media__1775029994540.jpg",
+            "/static/images/projects/gaurav/media__1775030002273.jpg"
         ]
     }
 ]
